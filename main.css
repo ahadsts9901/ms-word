@@ -1,0 +1,18 @@
+*{
+    box-sizing: border-box;
+    outline: none;
+    margin: 0;
+}
+
+input[type="checkbox"], input[type="radio"]{
+    display: none;
+}
+
+input[type="checkbox"]:checked + label, input[type="radio"]:checked + label{
+    color: #fff;
+    background-color: #212121;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 5px;
+}
