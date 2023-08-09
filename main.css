@@ -16,3 +16,51 @@ input[type="checkbox"]:checked + label, input[type="radio"]:checked + label{
     align-items: center;
     border-radius: 5px;
 }
+
+.button:active, .button:focus, .button:hover{
+    background-color: #dadada;
+}
+
+.swal2-confirm:focus,
+.swal2-deny:focus,
+.swal2-cancel:focus,
+.swal2-input:focus {
+    box-shadow: 0 0 4px #003459 !important;
+}
+
+
+/* scrollbar */
+
+::-moz-scrollbar {
+    height: 12px;
+    width: 12px;
+    border-radius: 10px;
+    background-color: #fff;
+}
+
+::-moz-scrollbar-track {
+    border-radius: 10px;
+    background-color: #fff;
+}
+
+::-moz-scrollbar-thumb {
+    background-color: #003459;
+    border-radius: 10px;
+}
+
+::-webkit-scrollbar {
+    background-color: #fff;
+    height: 12px;
+    width: 12px;
+    border-radius: 10px;
+}
+
+::-webkit-scrollbar-track {
+    border-radius: 10px;
+    background-color: #fff;
+}
+
+::-webkit-scrollbar-thumb {
+    border-radius: 10px;
+    background-color: #003459;
+}

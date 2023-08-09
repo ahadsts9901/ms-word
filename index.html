@@ -25,10 +25,11 @@
     <script src="https://cdn.tailwindcss.com"></script>
 </head>
 
-<body class="bg-[#fff] flex flex-col font-['Josefin_Sans'] width-[100%] h-screen">
-    <h1 class="bg-[#003459] text-[#fff] text-[2em] text-center p-[1em]">
-        MS Word
-    </h1>
+<body class="bg-[#dadada] flex flex-col font-['Josefin_Sans'] width-[100%] h-screen">
+    <div class="bg-[#003459] text-[#fff] text-center p-[1em] flex flex-col justify-center items-center">
+        <h1 class="text-[2em]">MS Word</h1>
+        <p>By Muhammad Ahad</p>
+    </div>
     <div class="header bg-[#dadada] text-[#212121] flex justify-start items-center flex-wrap p-[0.8em] gap-[0.5em] text-[1.2em] w-[100vw]">
         <div class="bg-white style flex gap-[0.3em] h-[2em] justify-center items-center p-[0.5em]">
             <input type="checkbox" id="bold">
@@ -39,18 +40,18 @@
             <label for="underline" class="underline p-[0.3em] text-[0.8em]">U</label>
         </div>
         <div class="bg-white font flex gap-[1em] h-[2em] justify-center items-center p-[0.5em]">
-            <select name="Font" id="font" class="p-[0.4em] text-center flex justify-center items-center">
-                <option value="sans-serif" disabled>Fonts</option>
-                <option value="sans-serif">Sans Serif</option>
-                <option value="sans-serif">Serif</option>
-                <option value="sans-serif">Monospace</option>
-            </select>
+                <select name="Font" id="font" class="p-[0.4em] text-center justify-center items-start gap-[1em]">
+                    <option value="sans-serif" disabled>Fonts</option>
+                    <option value="josefin-sans">Josefin Sans</option>
+                    <option value="space-mono">Space Mono</option>
+                    <option value="libre-bodoni">Libre Bodoni</option>
+                </select>
         </div>
         <div class="bg-white flex flex-col gap-[1em] h-[2em] justify-center items-center p-[0.5em]">
             <input type="color" id="color" class="border-0">
         </div>
         <div class="bg-white font-size flex gap-[1em] h-[2em] justify-center items-center p-[0.5em]">
-           <select name="size" id="size" class="bg-white p-[0.4em] text-center flex justify-center items-center">
+           <select name="size" id="size" class="bg-white p-[0.4em] text-center justify-center items-start gap-[1em]">
             <option value="12">12px</option>
             <option value="18">18px</option>
             <option value="24">24px</option>
@@ -60,10 +61,10 @@
            </select>
         </div>
         <div class="bg-white case flex gap-[1em] h-[2em] justify-center items-center p-[0.5em]">
-            <select name="size" id="size" class="p-[0.4em] text-center flex justify-center items-center">
-                <option value="capitalize">Capitalize</option>
+            <select name="size" id="case" class="p-[0.4em] text-center justify-center items-start gap-[1em]">
+                <option value="lower">lower case</option>
                 <option value="upper">UPPER CASE</option>
-                <option value="lower">lower cse</option>
+                <option value="capitalize">Capitalize</option>
             </select>
         </div>
         <div class="bg-white content flex gap-[1em] h-[2em] justify-center items-center p-[0.5em]">
@@ -72,19 +73,21 @@
             <input type="radio" id="center" name="content" value="center">
             <label for="center" class="p-[0.3em] text-[0.8em]"><i class="bi bi-text-center"></i></label>
             <input type="radio" id="right" name="content" value="right">
-            <label for="right" class=p-[0.3em] text-[0.8em]"><i class="bi bi-text-right"></i></label>
+            <label for="right" class="p-[0.3em] text-[0.8em]"><i class="bi bi-text-right"></i></label>
             <input type="radio" id="justify" name="content" value="justify">
             <label for="justify" class="p-[0.3em] text-[0.8em]"><i class="bi bi-justify"></i></label>
         </div>
-        <button class="bg-white content flex gap-[1em] h-[2em] justify-center items-center p-[0.5em]" type="button">Clear</button>
+        <button class="button clear bg-white content flex gap-[1em] h-[2em] justify-center items-center p-[0.5em]" type="button">Clear</button>
+        <button class="button letters bg-white content flex gap-[1em] h-[2em] justify-center items-center p-[0.5em]" type="button">Count Letters</button>
+        <button class="button words bg-white content flex gap-[1em] h-[2em] justify-center items-center p-[0.5em]" type="button">Count Words</button>
+        <!-- <button class="button save-pdf bg-white content flex gap-[1em] h-[2em] justify-center items-center p-[0.5em]" type="button">Save PDF</button> -->
     </div>
 
-    <textarea class="width-[100%] h-screen p-[1em]">jkdsd</textarea>
-
+    <textarea class="width-[100%] h-screen p-[1em] border border-[2px] border-[#ccc]"></textarea>
     <!-- sweet alert -->
     <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
     <!-- javascript -->
-    <!-- <script src="./main.js"></script> -->
+    <script src="./main.js"></script>
 </body>
 
 </html>
